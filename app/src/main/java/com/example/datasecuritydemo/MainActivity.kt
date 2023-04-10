@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val cryptoManager = CryptoManager()
-        val file = File(filesDir, "secret.txt")
+        val file = File(filesDir, "secrets.txt")
         if (!file.exists()) {
             file.createNewFile()
         }
