@@ -15,7 +15,7 @@ dependencyResolutionManagement {
             url = "https://maven.pkg.github.com/YAtechnologies/yassir-ui-android"
             credentials {
                 username = System.getenv("${GITHUB_USER}")
-                password = GITHUB_TOKEN
+                password = System.getenv("${GITHUB_TOKEN}")
             }
         }
     }
